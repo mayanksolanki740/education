@@ -1,0 +1,129 @@
+.coursesCard {
+  padding: 50px 0;
+}
+.coursesCard .items {
+  background-color: rgb(255, 255, 255);
+  padding: 30px;
+  text-align: center;
+}
+.coursesCard .img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgb(245, 151, 51);
+}
+.coursesCard .img img {
+  padding: 10px;
+}
+.coursesCard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.coursesCard .text {
+  margin-left: 15px;
+  text-align: left;
+}
+.coursesCard .text h1 {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 45px;
+}
+.coursesCard .rate {
+  margin: 20px 0;
+  color: #f7ad5d;
+}
+.coursesCard .rate i {
+  font-size: 13px;
+  margin-right: 5px;
+}
+.coursesCard .details .dimg img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+.coursesCard .details .box {
+  display: flex;
+  align-items: center;
+  color: gray;
+}
+.coursesCard .details span {
+  color: rgb(245, 151, 51);
+  font-weight: 500;
+  font-size: 14px;
+}
+.coursesCard .price {
+  margin: 30px 0;
+  background-color: #f8f8f8;
+  padding: 20px;
+}
+.coursesCard h3 {
+  font-weight: 500;
+  color: rgb(245, 151, 51);
+}
+.online {
+  text-align: center;
+}
+.online .box {
+  box-shadow: 0 5px 25px -2px rgba(0 0 0 /6%);
+  background-color: white;
+  padding: 30px 20px;
+  transition: 0.5s;
+}
+.online .img {
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  position: relative;
+}
+.online img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.online h1 {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 20px 0;
+  line-height: 30px;
+}
+.online span {
+  background-color: #f8f8f8;
+  padding: 5px 20px;
+  font-weight: 500;
+  font-size: 15px;
+  color: #f7ad5d;
+  border-radius: 5px;
+}
+.online .box .show {
+  opacity: 0;
+}
+.online .box:hover {
+  background-color: #f7ad5d;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.online .box:hover .show{
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.online .box:hover h1{
+color: white;
+}
+@media screen and (max-width: 768px) {
+  .content.grid3 {
+    grid-template-columns: repeat(2, 1fr); /* Change to two columns */
+  }
+  .online .box {
+    margin-bottom: 20px; /* Add margin for spacing */
+  }
+  .coursesCard .items {
+    margin: 10px; /* Add some margin for spacing */
+  }
+  .grid3 {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+  }
+}

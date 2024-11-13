@@ -1,0 +1,52 @@
+.testimonial .items {
+  padding: 40px 40px;
+  transition: 0.5s;
+}
+.testimonial .img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.testimonial img {
+  width: 100%;
+  height: 100%;
+  max-width: 150px;
+  border-radius: 50%;
+}
+.testimonial i {
+  position: absolute;
+  border-radius: 50%;
+  left: 110px;
+  bottom: 25px;
+  /* background-color: rgb(245, 151, 51); */
+  color: white;
+  font-size: 20px;
+}
+.testimonial .name {
+  margin: 25px;
+}
+.testimonial .name h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.testimonial .name span {
+  color: rgb(245, 151, 51);
+}
+.testimonial p {
+  margin-top: 20px;
+  color: gray;
+  transition: 0.5s;
+}
+.testimonial .items:hover {
+  background-color: rgb(245, 151, 51);
+  color: white;
+  cursor: pointer;
+}
+.testimonial .items:hover p,
+.testimonial .items:hover span{
+    color: white;
+}
+.testimonial .items:hover i{
+    color: rgb(245, 151, 51);
+}

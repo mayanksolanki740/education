@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f3f1f1;
+}
+.container {
+  max-width: 85%;
+  margin: auto;
+  padding: 0 10px; /* Add padding for smaller screens */
+}
+.flexSB {
+  display: flex;
+  justify-content: space-between;
+}
+.icon {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  color: rgb(245, 151, 51);
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: 0.5s;
+  font-size: 20px;
+}
+.icon:hover {
+  cursor: pointer;
+  background-color: rgb(245, 151, 51);
+  color: white;
+}
+.row {
+  width: 50%;
+}
+button {
+  padding: 17px 30px;
+  background-color: rgb(245, 151, 51);
+  color: white;
+  font-weight: 600;
+  border: none;
+  margin: 30px 10px 0 0;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+  box-shadow: 0 24px 36px -11px rgba(0 0 0 /9%);
+}
+button i {
+  margin-left: 20px;
+}
+button:hover {
+  color: rgb(245, 151, 51);
+  background-color: white;
+}
+#heading {
+  text-align: center;
+  padding: 40px 0;
+}
+#heading h3 {
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: rgb(245, 151, 51);
+  text-transform: uppercase;
+}
+#heading h1 {
+  font-size: 35px;
+  margin: 20px 0;
+  text-transform: capitalize;
+}
+p {
+  line-height: 30px;
+  font-size: 18px;
+}
+.back {
+  background-image: url("../public/images/back.png");
+  background-size: cover;
+  background-attachment: fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  padding-top: 25%;
+  padding-right: 50px;
+  color: white;
+  text-align: center;
+}
+.back h1 {
+  font-size: 100px;
+  font-weight: 400;
+}
+.back h2 {
+  text-transform: uppercase;
+}
+.margin {
+  margin-top: 40%;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.flex {
+  display: flex;
+}
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+.outline-btn {
+  margin: 0;
+  box-shadow: none;
+  border: 2px solid rgb(245, 151, 51);
+  width: 100%;
+  transition: 0.5s;
+}
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px;
+}
+.padding {
+  padding: 80px 0;
+}
+.shadow {
+  box-shadow: 0 5px 25px -2px rgba(0 0 0 /6%);
+  background-color: white;
+}
+@media screen and (max-width: 768px) {
+  
+  .back {
+    background-position: center;
+    height: 80vh;
+    padding-right: 0;
+  }
+  .grid3,
+  .grid2,
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .grid2{
+    display: flex;
+    flex-direction: column;
+  }
+  .margin {
+    margin-top: 80.3%;
+  }
+  .marginHero{
+    margin-top: 30%;
+  }
+  .aboutHome .container {
+    flex-direction: column; /* Stack items */
+    padding: 20px; /* Add padding */
+  }
+  .aboutHome .left,
+  .aboutHome .right {
+    width: 100%; /* Full width */
+    padding: 10px; /* Add padding */
+  }
+  .container {
+    max-width: 100%; /* Full width on smaller screens */
+    padding: 0 5%; /* Adjust padding */
+  }
+  #heading {
+    text-align: center;
+    padding: 40px 0;
+  }
+  #heading h3 {
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: rgb(245, 151, 51);
+    text-transform: uppercase;
+  }
+  #heading h1 {
+    font-size: 35px;
+    margin: 30px 0;
+    text-transform: capitalize;
+  }
+  .back h1 {
+    font-size: 80px;
+    font-weight: 400;
+  }
+  .back h2 {
+    text-transform: uppercase;
+  }
+  .marginHeading{
+    margin-top: 5%;
+  }
+}
