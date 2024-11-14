@@ -3,7 +3,7 @@ import Title from "../common/title/Title";
 import { homeAbout } from "../../dummydata";
 import AWrapper from "./AWrapper";
 import "./about.css";
-import backImage from "../../images/back2.png";
+import backImage from "/public/images/back2.png";
 const AboutCard = () => {
   return (
     <>
