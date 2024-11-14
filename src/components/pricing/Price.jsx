@@ -13,7 +13,7 @@ const Price = () => {
 
     window.addEventListener("resize", handleResize);
     return () => window.addEventListener("resize", handleResize);
-  });
+  }, []);
   return (
     <>
       <Back title="Choose The Right Plan" />

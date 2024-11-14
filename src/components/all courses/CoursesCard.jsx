@@ -3,7 +3,6 @@ import { coursesCard } from "../../dummydata";
 import "./courses.css";
 const CoursesCard = () => {
   return (
-    <>
       <section className="coursesCard">
         <div className="container grid2">
           {coursesCard.map((val, index) => {
@@ -70,7 +69,6 @@ const CoursesCard = () => {
           })}
         </div>
       </section>
-    </>
   );
 };
 
