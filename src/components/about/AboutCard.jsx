@@ -3,13 +3,14 @@ import Title from "../common/title/Title";
 import { homeAbout } from "../../dummydata";
 import AWrapper from "./AWrapper";
 import "./about.css";
+import backImage from "../../images/back2.png";
 const AboutCard = () => {
   return (
     <>
       <section className="aboutHome">
         <div className="container flexSB">
           <div className="left row">
-            <img src="/images/back2.png" alt="" />
+            <img src={backImage} alt="" />
           </div>
           <div className="right row">
             <Title
